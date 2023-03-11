@@ -267,13 +267,14 @@ nav .logo img {
   padding: 2px;
   font-weight: bold;
   height: 80%;
-  width: 30%;
+  width: 400px;
   padding-top: 15px;
 }
 @media(max-width:768px){
   .shopping_cart{
-    top: 88px;
-    width: 60%;
+    top: 253px;
+    max-width: 100%;
+    height: 500px;
   }
 }
 .shopping_cart h2{

@@ -58,10 +58,10 @@ hamburger.addEventListener("click", function () {
 // showinng shopping cart taggle button
 const shoppingCart = document.querySelector(".shopping_cart");
 const cartLinks = document.querySelectorAll('.cart');
- cartLinks.forEach((cartLink)=>{
+cartLinks.forEach((cartLink) => {
     cartLink.addEventListener("click", function () {
         shoppingCart.classList.toggle("active");
- })
+    })
 
 });
 
@@ -206,7 +206,10 @@ function showModel() {
             closeButton.addEventListener('click', () => {
                 modal.style.display = 'none';
             })
-
+            let modelAddToCartBtn = document.querySelector('.content .add_to_cart');
+            modelAddToCartBtn.addEventListener('click', function () {
+                addToCart(products[index].id);
+            })
             document.addEventListener('click', (e) => {
                 if (e.target === modal) {
                     modal.style.display = 'none';
